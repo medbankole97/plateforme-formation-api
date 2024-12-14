@@ -31,7 +31,7 @@ model students {
   email        String   @db.VarChar(100)
   address      String   @db.VarChar(100)
   tutor        String   @db.VarChar(50)
-  status       Boolean
+  status       Boolean   @default(true)
 
   registration registrations[]
   payment      payments[]
