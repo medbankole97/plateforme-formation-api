@@ -5,9 +5,9 @@ import { StatusCodes } from "http-status-codes";
 export const createRegistrationValidator = [
   check("dateRegister")
     .notEmpty()
-    .withMessage("Registration date is required.")
-    .isISO8601()
-    .withMessage("Registration date must be a valid ISO 8601 date."),
+    .withMessage("Registration date is required."),
+    // .isISO8601()
+    // .withMessage("Registration date must be a valid ISO 8601 date."),
 
   check("startDate")
     .notEmpty()
@@ -15,17 +15,11 @@ export const createRegistrationValidator = [
     .isISO8601()
     .withMessage("Start date must be a valid ISO 8601 date."),
 
-  check("endDate")
-    .notEmpty()
-    .withMessage("End date is required.")
-    .isISO8601()
-    .withMessage("End date must be a valid ISO 8601 date."),
-
-  check("amount")
-    .notEmpty()
-    .withMessage("Amount is required.")
-    .isDecimal({ decimal_digits: "2" })
-    .withMessage("Amount must be a valid decimal number with two decimal places."),
+  // check("amount")
+  //   .notEmpty()
+  //   .withMessage("Amount is required.")
+  //   .isDecimal({ decimal_digits: "2" })
+  //   .withMessage("Amount must be a valid decimal number with two decimal places."),
 
   check("moduleId")
     .isInt({ min: 1 })
