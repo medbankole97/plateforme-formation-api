@@ -4,7 +4,7 @@ import { createPayment, deletePayment, getAllPayments, getPaymentById, updatePay
 
 const paymentRouter = express.Router();
 
-paymentRouter.post('/payment', createPaymentValidator,createPayment)
+paymentRouter.post('/payment', createPaymentValidator, createPayment)
 paymentRouter.get('/payment', getAllPayments)
 paymentRouter.get('/payment/:id', getPaymentByIdValidator, getPaymentById)
 paymentRouter.put('/payment/:id', updatePaymentValidator, updatePayment);
