@@ -17,7 +17,7 @@ CREATE TABLE "students" (
     "email" VARCHAR(100) NOT NULL,
     "address" VARCHAR(100) NOT NULL,
     "tutor" VARCHAR(50) NOT NULL,
-    "status" BOOLEAN NOT NULL,
+    "status" BOOLEAN NOT NULL DEFAULT true,
 
     CONSTRAINT "students_pkey" PRIMARY KEY ("id")
 );
@@ -29,6 +29,7 @@ CREATE TABLE "registrations" (
     "startDate" TIMESTAMP(3) NOT NULL,
     "endDate" TIMESTAMP(3) NOT NULL,
     "amount" DECIMAL(10,2) NOT NULL,
+    "remainingAmount" DECIMAL(10,2) NOT NULL,
     "moduleId" INTEGER NOT NULL,
     "studentId" INTEGER NOT NULL,
 

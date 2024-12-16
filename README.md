@@ -33,7 +33,7 @@ Suivez ces étapes pour configurer le projet sur votre machine locale :
 1. Clonez le dépôt sur votre machine locale :
 
 ```
-git clone https://github.com/NdiayeOusmanaCamara/plateforme-formation-api.git
+git clone https://github.com/medbankole97/plateforme-formation-api.git
 
 ```
 
@@ -112,4 +112,4 @@ npm run format
 ## Auteur
 
 
-[Hama Houllah Mangassouba ](https://https://github.com/Mangassouba)
+[Mohamed Bankolé ](https://https://github.com/medbankole97)
